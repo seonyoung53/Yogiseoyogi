@@ -128,17 +128,6 @@ function cartDelete(cnum){
 </script>
 
 <style>
-#mainBtn{
-	border: 1px solid rgb(95, 0, 128);
-	color: rgb(95, 0, 128);
-	background-color: white;
-	width: 200px;
-	height: 40px;
-	border-radius: 50px;
-	padding: 5px;
-	margin: 20px;
-	font-size: 15px;
-}
 .cartheader{
 	width:900px;
 	margin:auto;
@@ -239,9 +228,9 @@ function cartDelete(cnum){
 			<c:choose>
 				<c:when test="${cartList[0].cnum eq null}">
 					<div style="height:100px"></div>
-					<i class="fas fa-shopping-cart" style="font-size:70px; margin: 15px;"></i><br>
+					<i class="fas fa-shopping-cart" style="font-size:70px;"></i><br>
 					장바구니에 담긴 상품이 없습니다.<br>
-					<button onclick="goMain()" id="mainBtn">홈으로 가기</button>
+					<button onclick="goMain()">홈으로 가기</button>
 					<div style="height:100px"></div>
 				</c:when>
 				<c:otherwise>

@@ -15,6 +15,12 @@
 	    });
 	    auth2.disconnect();
 	  }
+	function searchFn() {
+		var searchWord = document.getElementById("searchword").value;
+		console.log(searchWord);
+		location.href="searchmenu?searchWord="+searchWord;
+	}
+
 </script>
 <style>
 	.menu{
@@ -66,7 +72,7 @@
     </div>
 
     <div class="search">
-        <input type="text" id="searchword" value="신전떡볶이">
+        <input type="text" id="searchword" placeholder="먹고 싶은 메뉴 검색">
         <button onclick="searchFn()" id="searchbtn"><i class="fas fa-search"></i></button>
     </div>
 </body>

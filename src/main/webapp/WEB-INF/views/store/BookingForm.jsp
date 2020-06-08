@@ -169,7 +169,11 @@ form input:focus {
 }
 
 #bookingBtn{
+	text-align: center;
+	width: 150px;
 	margin-top:15px;
+	padding: 10px;
+	border-radius: 50px;
 }
 </style>
 </head>

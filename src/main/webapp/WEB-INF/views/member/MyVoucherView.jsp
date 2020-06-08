@@ -7,8 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src="resources/js/jquery.min.js"></script>
-<script type="text/javascript" src="resources/js/qrcode.js"></script>
+<script type="text/javascript" src="resources/qrcode/jquery.min.js"></script>
+<script type="text/javascript" src="resources/qrcode/qrcode.js"></script>
 <script src="https://kit.fontawesome.com/cd5c7a4640.js"
 	crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"rel="stylesheet">
@@ -22,6 +22,14 @@
 <style>
 	#voucherList td{
 		padding : 20px;
+	}
+	.voucherqr{
+		border: 1px solid #ddd;
+		width: 300px;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
 	}
 </style>
 
@@ -39,7 +47,7 @@
 	     	<div id="mypage_line_0"></div>
 			   
 			   
-			    <div>
+			    <div class="voucherqr">
 					<table style="margin-left: auto; margin-right: auto">
 						<tr>
 							<td id="qrcode"></td>

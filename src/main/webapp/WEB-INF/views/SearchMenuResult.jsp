@@ -94,7 +94,7 @@
 				    			<div id="storeProfileImg">
 				    				<c:choose>
 				    					<c:when test="${store.simg ne null}">
-			    							<img src="resources/img/storeProfile/${store.simg}" id="storeImg">
+			    							<img src="resources/img/Profile/${store.simg}" id="storeImg">
 			    						</c:when>
 			    						<c:otherwise>
 			    							<img src="resources/img/logo/로고2.png" id="storeImg">
@@ -128,7 +128,7 @@
 				    			<div id="storeProfileImg">
 			    					<c:choose>
 				    					<c:when test="${store.simg ne null}">
-			    							<img src="resources/img/storeProfile/${store.simg}" id="storeImg">
+			    							<img src="resources/img/Profile/${store.simg}" id="storeImg">
 			    						</c:when>
 			    						<c:otherwise>
 			    							<img src="resources/img/logo/로고2.png" id="storeImg">

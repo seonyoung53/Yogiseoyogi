@@ -91,7 +91,7 @@ public class NoticeService {
 		MultipartFile nfilefile = notice.getNfilefile();
 		String nfile = nfilefile.getOriginalFilename();
 		
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+nfile;
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+nfile;
 		if(!nfilefile.isEmpty()) {
 			nfilefile.transferTo(new File(savePath));
 		}
@@ -115,7 +115,7 @@ public class NoticeService {
 		NoticeDTO notice = noticeDAO.adminNoticeView(nnum);
 		MemberDTO profile = memberDAO.myProfile(loginId);
 		
-		Path source = Paths.get("C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+notice.getNfile());
+		Path source = Paths.get("C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+notice.getNfile());
 	    String mimeType = Files.probeContentType(source);
 	    if(mimeType.contains("image")) {
 	    	notice.setNfiletype("이미지");
@@ -150,7 +150,7 @@ public class NoticeService {
 		MultipartFile nfilefile = notice.getNfilefile();
 		String nfile = nfilefile.getOriginalFilename();
 		
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+nfile;
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+nfile;
 		if(!nfilefile.isEmpty()) {
 			nfilefile.transferTo(new File(savePath));
 		}
@@ -262,7 +262,7 @@ public class NoticeService {
 		
 		NoticeDTO notice = noticeDAO.adminNoticeView(nnum);
 		
-		Path source = Paths.get("C:\\\\Users\\10\\Desktop\\develporent\\souce\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+notice.getNfile());
+		Path source = Paths.get("C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\notice\\"+notice.getNfile());
 	    String mimeType = Files.probeContentType(source);
 	    if(mimeType.contains("image")) {
 	    	notice.setNfiletype("이미지");

@@ -28,7 +28,7 @@
 		
 		<div id="top_profile_contents" style="text-align:left;">
 			<span style="font-size: 35px; font-weight:500;">${profile.mnickname}님</span><br><br>
-			<a href="#" onclick="signOut();">로그아웃</a>
+			<a href="#" onclick="signOut();" style="color:black;">로그아웃</a>
 			<br><br>
 			<table id="top_profile_contents_table">
 				<tr id="on">

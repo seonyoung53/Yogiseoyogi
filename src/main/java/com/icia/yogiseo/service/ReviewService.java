@@ -46,7 +46,7 @@ public class ReviewService {
 
 		MultipartFile rFiles = review.getRimgfile();
 		String rFilesname = rFiles.getOriginalFilename();
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\review\\"+rFilesname;
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\review\\"+rFilesname;
 		if(!rFiles.isEmpty()) {
 			rFiles.transferTo(new File(savePath));
 		}

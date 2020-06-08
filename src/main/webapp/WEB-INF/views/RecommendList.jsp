@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -157,7 +158,7 @@
 							<img src="resources/img/recommend/이자카야대표사진.jpg" style="width: 100%" id="vstoreImg">
 						</c:when>
 					</c:choose>
-					<a href="storeview?sid=${store.sid}"><span class="tt">${store.storename}</span></a><strong class="rr">${rrateList[i.index]}</strong>
+					<a href="storeview?sid=${store.sid}"><span class="tt">${store.storename}</span></a><strong class="rr">${fn:substring(rrateList[i.index],0,3)}</strong>
 					<p class="pp">(${store.sadrs1})</p>
 				</div>
 			</c:forEach>

@@ -39,7 +39,7 @@ public class VoucherService {
 			MultipartFile vimgfile = voucher.getVimgfile();
 			String vimg = vimgfile.getOriginalFilename();
 			
-			String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\VoucherDP\\"+vimg;
+			String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\VoucherDP\\"+vimg;
 			if(!vimgfile.isEmpty()) {
 				vimgfile.transferTo(new File(savePath));
 			}

@@ -136,7 +136,6 @@ function ordersCancelFn(onum){
 	     		  if(max<June){
 	     			  max = June;
 	     		  }
-	     		  
 	     		  max = max+2;
 	     		  
 	              var myChart = new Chart(ctx, {

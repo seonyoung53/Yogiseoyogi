@@ -15,7 +15,7 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 <title>Insert title here</title>
 <style>
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resources/img/메뉴추천배경.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resources/img/recommend/PIXNIO-1578669-5307x3538.jpg");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;

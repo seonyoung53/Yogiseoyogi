@@ -164,7 +164,7 @@ public class MemberService {
 		MultipartFile mimgFile = member.getMimgfile();
 		String mimg = mimgFile.getOriginalFilename(); 
 		
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"+mimg;
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"+mimg;
 		
 		if(!mimgFile.isEmpty()) {
 				mimgFile.transferTo(new File(savePath));
@@ -423,7 +423,7 @@ public class MemberService {
 		MultipartFile mimgFile = member.getMimgfile();
 		String mimg = mimgFile.getOriginalFilename(); 
 
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"+mimg;
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile"+mimg;
 
 		if(!mimgFile.isEmpty()) {
 			mimgFile.transferTo(new File(savePath));

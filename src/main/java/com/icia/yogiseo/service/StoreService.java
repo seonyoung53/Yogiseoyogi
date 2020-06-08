@@ -148,7 +148,7 @@ public class StoreService {
 		MultipartFile simgFile = store.getSimgfile();
 		String simg = simgFile.getOriginalFilename();
 
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"
 				+ simg;
 
 		if (!simgFile.isEmpty()) {
@@ -235,7 +235,8 @@ public class StoreService {
 		MultipartFile menuimgFile = menu.getMenuimgfile();
 		String menuimg = menuimgFile.getOriginalFilename();
 
-		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\menuImage\\"+menuimg;
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"
+				+ menuimg;
 
 		if (!menuimg.isEmpty()) {
 			menuimgFile.transferTo(new File(savePath));
@@ -278,7 +279,7 @@ public class StoreService {
 		MultipartFile menuimgFile = menu.getMenuimgfile();
 		String menuimg = menuimgFile.getOriginalFilename();
 
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\menuImage\\"
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"
 				+ menuimg;
 
 		if (!menuimg.isEmpty()) {
@@ -354,7 +355,7 @@ public class StoreService {
 		MultipartFile sFile = store.getSimgfile();
 		String simg = sFile.getOriginalFilename();
 
-		String savePath = "C:\\Users\\4\\Desktop\\Development\\Source\\servlet\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"
+		String savePath = "C:\\Users\\12\\Desktop\\YogiseoYogi\\src\\main\\webapp\\resources\\img\\Profile\\"
 				+ simg;
 
 		if (!simg.isEmpty()) {

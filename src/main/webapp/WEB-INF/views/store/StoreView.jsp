@@ -230,7 +230,7 @@
 		var menuname = $("#menuname"+menunum).text();
 		var menuprice = parseInt($("#menuprice"+menunum).text().slice(0,-1).replace(",",""));
 		var camount = parseInt($("#camount"+menunum).val());
-		console.log(menuname);
+		console.log(camount);
 		$.ajax({
 			type:"post",
 			url:"cartadd",
@@ -433,8 +433,8 @@
 	    			<div class="menuList">
 	    				<img src="resources/img/menuImage/${menu.menuimg}" class="menuImg">
 	    				<div class="menuInfo">
-	    					<span style="font-size:20px;font-weight:400" id="menuname${menu.menunum}" value="${menu.menuname}">${menu.menuname}</span>
-	    					<span style="color:gray;font-weight:100">${menu.menudesc}</span><br>
+	    					<span style="font-size:20px;font-weight:400" id="menuname${menu.menunum}" value="${menu.menuname}">${menu.menuname}</span><br>
+	    					<span style="color:gray;font-weight:100; font-size: 13px;">${menu.menudesc}</span><br>
 	    					<table id="menuInfo_table">
 	    					<tr>
 	    						<td>

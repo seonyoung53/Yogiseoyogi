@@ -74,7 +74,6 @@ public class OrdersService {
 				cart.setCnum(checkedCart.getCnum());
 				cartAddResult = cartDAO.cartUpdate(cart);
 			}else {
-				System.out.println(cart);
 				cartAddResult = cartDAO.cartAdd(cart);
 			}
 		}

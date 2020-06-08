@@ -35,7 +35,7 @@ function signOut() {
 			</c:choose>
 		</div>
 		
-		<div id="top_profile_contents" style="text-align:left;"><!--프로필 내용-->
+		<div id="top_profile_contents" style="text-align:left; width:740px !important;"><!--프로필 내용-->
 			<span style="font-size: 35px; font-weight:500;">${store.sname}님</span>
 			${store.storename}<br><br>
 			<table id="top_profile_contents_table">

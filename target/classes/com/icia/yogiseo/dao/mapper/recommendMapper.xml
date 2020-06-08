@@ -57,7 +57,7 @@
  	</select>
  	
  	<select id="getReview" parameterType="String" resultType="review">
- 		SELECT * FROM REVIEW WHERE SID=#{sid} AND RRATE=(SELECT DISTINCT MAX(RRATE) FROM REVIEW WHERE SID=#{sid})
+ 		SELECT * FROM REVIEW WHERE SID=#{sid} AND RHIT=(SELECT DISTINCT MAX(RHIT) FROM REVIEW WHERE SID=#{sid})
  	</select>
  	
  	<select id="getMimg" parameterType="String" resultType="String">

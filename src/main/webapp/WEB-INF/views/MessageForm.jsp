@@ -64,7 +64,7 @@
 					Chat__drawMessages(message);
 				}
 				var offset = $('#mcontents').offset();
-				$('html').animate({scrollTop:offset.top},100);
+				$('html').animate({scrollTop:offset.top},1);
 				
 				setTimeout(Chat__loadNewMessages,500);
 			},

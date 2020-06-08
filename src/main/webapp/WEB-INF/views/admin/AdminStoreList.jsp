@@ -156,7 +156,7 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 					<c:when test="${storeList.simg eq null}">
 						<td><img src="resources/img/logo/로고2.png" id="profileimg"></td></c:when>
 					<c:otherwise>
-						<td><img src="resources/img/storeProfile/${storeList.simg}" id="profileimg"></td>
+						<td><img src="resources/img/Profile/${storeList.simg}" id="profileimg"></td>
 					</c:otherwise>
 				</c:choose>
 	     			<td>${storeList.storename}</td>

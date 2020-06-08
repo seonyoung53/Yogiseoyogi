@@ -91,6 +91,17 @@ function reviewComment(rnum){
 }
 </script>
 <style>
+
+	#top_profile_contents{
+		text-align:left;
+		width:500px;
+	}
+	
+	#top_profile_object{
+		padding-top:30px;
+		float:left;
+		text-align:center;
+	}
 	.fa-star{
 		font-size:20px;
 	}

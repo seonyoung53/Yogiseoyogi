@@ -71,7 +71,7 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 					<img src="resources/img/logo/로고2.png" id="profileImg">
 				</c:when>
 				<c:otherwise>
-					<img src="resources/img/storeProfile/${storeView.simg}" id="profileImg">
+					<img src="resources/img/Profile/${storeView.simg}" id="profileImg">
 				</c:otherwise>
 			</c:choose>
 	<div class="inline">

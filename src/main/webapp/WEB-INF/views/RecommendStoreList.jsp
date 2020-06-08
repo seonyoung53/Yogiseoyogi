@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,7 +62,7 @@
 			<div class="imgArea">
 				<c:choose>
 					<c:when test="${store.simg ne null}">
-						<img src="resources/img/storeProfile/${store.simg}" class="storeimg">
+						<img src="resources/img/Profile/${store.simg}" class="storeimg">
 					</c:when>
 					<c:otherwise>
 						<img src="resources/img/logo/로고2.png" class="storeimg">
@@ -77,7 +78,7 @@
 				<div class="reviewArea">
 				<c:choose>
 					<c:when test="${imgList[status.index] ne null}">
-						<span class="reviewImgArea"><img src="resources/img/memberProfile/${imgList[status.index]}"></span>
+						<span class="reviewImgArea"><img src="resources/img/Profile/${imgList[status.index]}"></span>
 					</c:when>
 					<c:when test="${imgList[status.index] eq null}">
 						<span class="reviewImgArea"><img src="resources/img/logo/로고2.png"></span>
@@ -88,7 +89,7 @@
 				</div>
 			</div>
 			<div class="moreInfoArea">
-				<span class="rateArea">평점 ${rrateList[status.index]}</span><br><br><br><br><br>
+				<span class="rateArea">평점 ${fn:substring(rrateList[status.index],0,3)}</span><br><br><br><br><br>
 				<span class="seeMore"><a href="storeview?sid=${store.sid}">${store.storename} 더 보기 ></a></span>
 			</div>
 	</div><br>
